@@ -1,0 +1,264 @@
+body{
+  margin:0px;
+  padding:0;
+  font-family: 'Lora', serif;
+}
+.profile-image{
+  height:40px;
+  border-radius: 50%;
+}
+.header{
+  box-sizing:border-box;
+  width:100%;
+  background: #673AB7;
+  padding:5px;
+  margin-bottom:10px;
+}
+.header img{
+  position:relative;
+}
+.header p{
+  position:absolute;
+  left:32px;
+  top:0px;
+  height:16px;
+  font-size:16px;
+  margin:5px !important;
+  width:280px;
+  padding-left:20px;
+  color:#ffffff;
+}
+.list
+{
+  float:right;
+}
+.list-item{
+  display:inline;
+  margin-left: 30px;
+  font-size: 16px;
+}
+.list-item:last-child{
+  margin-right:60px;
+}
+.list-item a{
+  text-decoration: none;
+  color:#FFC107;
+}
+.image{
+  width:30vw;
+}
+.sidebar{
+  float:right;
+  clear:right;
+  width:46%;
+  padding: 2%;
+}
+.sidebar-main-content{
+  padding: 10px;
+  /* transform:translateX(2%);
+  transition-property:padding;
+  transition-duration: 1s;
+  transition-delay:1s;
+  transition-timing-function: ease-in-out */
+  animation-name: animate;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+.image-section{
+  width:48%;
+  padding:2%;
+}
+.image{
+  width:100%;
+}
+/* .footer {
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    background: rgb(209, 196, 233);
+} */
+@keyframes animate {
+  0%{
+   transform:translateY(-100%);
+    background:#D1C4E9;
+  }
+}
+@media only screen and (max-width:630px){
+  .header p{
+    visibility:hidden;
+  }
+  .image{
+    display:none;
+  }
+  .header .list,.list1,.list-about{
+    padding: 0px;
+  }
+  .sidebar,.header .list,.list1,.list-about{
+    width:95%;
+    float:none;
+  }
+  .TechandLang{
+    display:flex;
+    flex-direction: column;
+  }
+}
+/*about page*/
+.Know_about_me{
+  border:0;
+  padding:10px;
+  margin:10px 0px;
+  display:block;
+  background-color:#46c34c	;
+  color: #fff;
+  cursor:pointer;
+}
+.getTouched{
+  text-decoration: none;
+  color:#fff;
+}
+.tech-logo,.lang-logo
+{
+  height:20px;
+}
+.tech-list,.lang-list{
+  list-style-type:none;
+}
+.tech-list-item,.lang-list-item{
+  margin:5px 0px;
+}
+.tech-list-item:nth-child(6) img,.lang-list-item:nth-child(4) img{
+  width:20px;
+}
+.frontend-and-backend{
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.TechandLang{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*contact page*/
+.ContactForm
+{
+  background-color: #16a085;
+  color:#FFFFFF;
+  text-align: center;
+  margin:10px 0px;
+  border-radius:15px 0px;
+}
+.main{
+  background-color: #16a085;
+  filter:blur(0.2px);
+  /* width:100%; */
+  box-sizing:border-box;
+}
+.form{
+  padding:10px;
+}
+.namelabel{
+  position:relative;
+}
+.name-input{
+  width:80%;
+  position:relative;
+  left: 6.25rem;
+  top: -45px;
+}
+#firstname{
+  position:relative;
+  line-height:40px;
+  border:0px;
+  border-radius:6px;
+  padding:0px 18px;
+  font-size:16px;
+  color:#555;
+}
+#lastname{
+  position:relative;
+  /* left:15.625rem; */
+  /* top:-40px; */
+  line-height:40px;
+  border-radius:6px;
+  border:0px;
+  padding:0px 18px;
+  font-size:16px;
+  color:#555;
+}
+/* .firstnamelabel{
+  position:relative;
+  top:30px;
+  left:-14.375rem;
+}
+.lastnamelabel{
+  position:relative;
+  top:-10px;
+  left:1.25rem;
+} */
+.emailtext{
+  position:relative;
+}
+#email{
+  position:relative;
+  left:9.375rem;
+  top:-50px;
+  line-height:40px;
+  border-radius:6px;
+  border:0px;
+  padding:0px 22px;
+  font-size:16px;
+  color:#555;
+}
+.phone{
+  position:relative;
+}
+#ph-no{
+  position:relative;
+  left:9.375rem;
+  top:-50px;
+  line-height:40px;
+  border-radius:6px;
+  border:0px;
+  padding:0px 22px;
+  font-size:16px;
+  color:#555;
+}
+#submit-form{
+  background-color: #7f8c8d;
+  border-radius: 12px;
+  border:2px solid #366473;
+  transition:0.25px;
+  cursor:pointer;
+  margin:20px 0px 0px 20px;
+  text-align:center;
+}
+#submit-form:hover{
+  background-color: #d35400;
+}
+#queries{
+  width:100%;
+}
+@media only screen and (max-width:1350px){
+  .name-input,#firstname,.firstnamelabel,.lastnamelabel,#lastname,#email,#ph-no{
+    position: static;
+  }
+  .firstnamelabel,.lastnamelabel{
+    display: none;
+  }
+  #firstname{
+    margin-bottom:10px;
+  }
+}
+/*projects page*/
+.code{
+  text-decoration:none;
+  color:#FFFFFF;
+}
+.buttoncode{
+  background-color: #46c34c;
+  border:0px;
+  padding:5px;
+  color:#FFFFFF;
+}
