@@ -77,7 +77,13 @@
       </div>
       <div class=" sidebar-main-content">
         <h4>Email me at:<a href="mailto:gumparthypk@gmail.com">gumparthypk@gmail.com</a></h4>
-        <h4>contact <i class="fa fa-phone" aria-hidden="true"></i> : 8309931603</h4>
+        <h4>contact <i class="fa fa-phone" aria-hidden="true"></i> : <span style="color:blue;">8309931603</span></h4>
+        <h3>Follow me on:</h3>
+        <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100012980171499" target="_blank"><img class="follow-social-media" src="./images/facebooklogo.png" alt="Sorry!image cannot be loaded"/></a>
+          <a href="https://www.instagram.com/___pavankumar/" target="_blank"><img class="follow-social-media" src="./images/instagramlogo.png" alt="Sorry!image cannot be loaded"/></a>
+          <a href="https://github.com/Gumparthypavankumar" target="_blank"><img class="follow-social-media" src="./images/githublogo.png" alt="Sorry!image cannot be loaded"/></a>
+        </div> 
       </div>
   </div>
   <div class="image-section">

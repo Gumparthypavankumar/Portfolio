@@ -240,6 +240,21 @@ body{
 #queries{
   width:100%;
 }
+.call
+{
+  color:blue;
+}
+.social-media
+{
+  border:medium solid 2px black;
+  border-radius:5%;
+}
+.follow-social-media
+{
+  max-height:40px;
+  border-radius:2% !important;
+  padding:10px;
+}
 @media only screen and (max-width:1350px){
   .name-input,#firstname,.firstnamelabel,.lastnamelabel,#lastname,#email,#ph-no{
     position: static;
