@@ -15,6 +15,9 @@
         die ("Connection cannot be established".mysqli_connect_error());
     else
     {
+      mail('gumparthypk@gmail.com','Hello New User Registered in your application portfolio','Say Hello');
+      $message = "Hey Hello ".$firstname." Thank You For Registering With Us We Will Conatct You Shortly.";
+      mail($email,'Contact Pavan Kumar',$message);
       $query="insert into contact_details(firstname,lastname,email,phone,student,searchingdata)"."values('$firstname','$lastname','$email','$phone','$student','$description')";
       if(mysqli_query($con,$query))
         echo "<script type='text/javascript'>alert('we will contact you shortly Thank you for your interest')</script>";
